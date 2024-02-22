@@ -12,9 +12,12 @@ using System.Threading.Tasks;
 
 namespace Application.Features.someFeature.Commands.CreateSomeFeature
 {
+    //Command class
     public class CreateSomeFeatureEntityCommand : IRequest<CreatedSomeFeatureEntityDto>
     {
         public string Name { get; set; }
+        
+        //Handler class
         public class CreateSomeFeatureEntityCommandHandler : IRequestHandler<CreateSomeFeatureEntityCommand, CreatedSomeFeatureEntityDto>
         {
             private readonly ISomeFeatureEntityRepository _someFeatureEntityRepository;
