@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Brands.Commands.CreateBrand
 {
-    public partial class CreateBrandCommand : IRequest<CreatedBrandDto>
+    public class CreateBrandCommand : IRequest<CreatedBrandDto>
     {
         public string Name { get; set; }
 
